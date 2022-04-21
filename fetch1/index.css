@@ -1,0 +1,234 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.wrapper .container {
+  display: flex;
+  margin-left: 5%;
+}
+
+.search-container {
+  background-color: rgb(177, 41, 41);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
+}
+
+.logo p {
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+.logo p span {
+  color: #3511d4;
+}
+
+.search-element {
+  display: flex;
+  position: relative;
+}
+
+.search-element h3 {
+  align-self: center;
+  margin-right: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.search-element .form-control {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  outline: none;
+  color: #f50707;
+  width: 500px;
+  border-radius: 10px;
+  border: 0ch;
+}
+
+.search-list {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  max-height: 700px;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.search-list .search-list-item {
+  background-color: #292929;
+  padding: 0.5rem;
+  border-bottom: 1px solid #fc0404;
+  width: calc(350px - 8px);
+  color: white;
+  cursor: pointer;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+
+}
+
+.search-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.search-item-thumbnail img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.search-item-info h3 {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.search-item-info p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+/* thumbnail */
+.search-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.3);
+}
+
+.search-list::-webkit-scrollbar-thumb {
+  background-color: #d4aa11;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* js related class */
+.hide-search-list {
+  display: none;
+}
+
+/* movie result */
+.result-container {
+  padding: 3rem 0;
+}
+
+.movie-poster img {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 4px solid #fff;
+}
+
+.movie-info {
+  text-align: center;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+/* movie info stylings */
+.movie-title {
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #2e11d4;
+}
+
+
+.movie-imdb {
+  background-color: #ff0e0e;
+  font-size: medium;
+  border: 1px solid rgb(41, 5, 243);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.movie-info .year {
+  font-weight: bold;
+  margin-top: 2%;
+  font-size: medium;
+}
+
+
+
+.movie-info .rated {
+  background-color: #df3b12;
+  padding: 0.4rem;
+  margin: 0 0.4rem;
+  border-radius: 3px;
+  font-weight: bold;
+
+}
+
+.movie-misc-info {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+.movie-info .released {
+  font-size: medium;
+  margin-top: 2%;
+}
+
+.movie-info .writer {
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.movie-info .genre {
+  background-color: #ee0000;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.movie-info .plot {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+
+#result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+
+
+.movie-info .language {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #d41111;
+  font-style: italic;
+}
+
+.movie-info .awards {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #d41111;
+}
+
+.movie-info .awards i {
+  color: #d41111;
+  margin: 1rem 0.7rem 0 0;
+}
