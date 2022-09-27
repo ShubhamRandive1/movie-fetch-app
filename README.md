@@ -12,9 +12,10 @@ while implementing CSS3 grid for arranging the div
 <h3>
   setInterval Implementation
 </h3>
-![Screenshot (715)](https://user-images.githubusercontent.com/57911117/192531943-3561ceb8-1421-4c18-aca9-cc69ebd95081.png)
+![Screenshot (716)](https://user-images.githubusercontent.com/57911117/192532451-1afb28d1-91a4-42fb-8bf3-defb631f2999.png)
 
 <h3>
   fetch api implementation
 </h3>
-![Screenshot (716)](https://user-images.githubusercontent.com/57911117/192531952-0de5d255-7851-4bca-a9ea-87ab20da48fc.png)
+
+![Screenshot (715)](https://user-images.githubusercontent.com/57911117/192532492-10030dc1-8761-441c-a1a8-08a052ae3012.png)
